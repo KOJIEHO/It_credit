@@ -3,57 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создаем IT-продукты</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <title>IT-продукты для бизнеса</title>
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #121212;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3A3DF0;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('your-image-path.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .cta-button {
+            background: #3A3DF0;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero-content .cta-button:hover {
+            background: #2a2fcc;
+        }
+
+        .services {
+            padding: 60px 50px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .services .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .services .service {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .services .service p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .about {
+            padding: 60px 50px;
+            text-align: center;
+            background: #121212;
+            color: #fff;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .about .about-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .about .stat {
+            text-align: center;
+        }
+
+        .about .stat h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #3A3DF0;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">Название компании</div>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a href="about_us.html">О компании</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="contacts.html">Продукты компании</a>
-                    </li>
-                </ul>
-                <a class="contact-button" href="application.html">Оставьте вашу заявку ☎</a>
-            </nav>
-        </div>
+    <header>
+        <div class="logo">IT-компания</div>
+        <nav>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="hero">
-            <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1>Создаем IT-продукты для вашего бизнеса</h1>
-                    <div class="contact-circle">Свяжитесь с нами</div>
-                </div>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Создаем IT-продукты для вашего бизнеса</h1>
+            <p>Мы предлагаем инновационные решения для вашего роста.</p>
+            <a href="#contact" class="cta-button">Свяжитесь с нами</a>
         </div>
     </div>
 
-    <!-- <div class="container">
-        <div class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Создаем IT-продукты для вашего бизнеса</h1>
-                <div class="contact-circle">Свяжитесь с нами</div>
+    <section class="services" id="services">
+        <h2>Наши услуги</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Разработка сайтов</h3>
+                <p>Создаем адаптивные и функциональные веб-приложения под ключ.</p>
+            </div>
+            <div class="service">
+                <h3>Мобильные приложения</h3>
+                <p>Разрабатываем приложения для iOS и Android с высоким качеством.</p>
+            </div>
+            <div class="service">
+                <h3>Облачные решения</h3>
+                <p>Оптимизируем бизнес с помощью облачных технологий.</p>
             </div>
         </div>
-    </div> -->
+    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="logo">Название компании</div>
-            <div class="center">2024</div>
-            <div class="rights">Все права защищены</div>
+    <section class="about" id="about">
+        <h2>О нас</h2>
+        <p>Мы - команда профессионалов с опытом более 10 лет в IT-индустрии.</p>
+        <div class="about-stats">
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Успешных проектов</p>
+            </div>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Лет опыта</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Довольных клиентов</p>
+            </div>
         </div>
+    </section>
+
+    <footer>
+        © 2024 IT-компания. Все права защищены.
     </footer>
 </body>
 </html>
