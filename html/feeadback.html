@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами</title>
+
+    <link href="../css/feedback.css" rel="stylesheet">
+    <script src="../js/submit-form.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">IT-компания</div>
+        <nav>
+            <a href="../index.html#services">Услуги</a>
+            <a href="../index.html#about">О компании</a>
+            <a href="../index.html#our_products">Продукты компании</a>
+            <a href="../index.html#contact">Контакты</a>
+            <a href="../index.html">На главную </a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Заполните форму</h1>
+            <div class="form-container">
+                <form>
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                    <label for="phone_number">Ваш номер телефона</label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="Введите ваш номер телефона" required>
+
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
+                    <h4>С вами свяжется наш менеджер</h4>
+                     <input id="button" type="button" onclick="redirect()" value="Отправить">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024-2025 IT-компания. Все права защищены.
+    </footer>
+</body>
+</html>
