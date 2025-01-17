@@ -138,3 +138,106 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Адаптивность для мобильных устройств */
+/* Для экранов до 1024px */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .form-container {
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Для экранов до 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .form-container {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Для экранов до 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .form-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
