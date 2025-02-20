@@ -3,7 +3,6 @@ body {
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
 }
 
 /* Хедер и навигация */
@@ -73,12 +72,13 @@ nav a {
 .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .about p {
     font-size: 18px;
     margin-bottom: 30px;
-    /* color: #333; */
+    color: #fff;
 }
 
 .about-stats {
@@ -94,6 +94,7 @@ nav a {
 .stat h3 {
     font-size: 28px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .stat p {
@@ -103,7 +104,7 @@ nav a {
 
 /* Секция карты */
 .map {
-    padding: 60px 50px;
+    padding: 60px 150px;
     background: #121212;
     text-align: center;
     color: #fff;
@@ -177,6 +178,109 @@ footer {
     }
 
     .map h2 {
+        font-size: 24px;
+    }
+}
+
+/* Стили для карусели */
+.gallery {
+    padding: 60px 20px; /* Уменьшим боковые отступы */
+    background: #121212;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    max-width: 1200px; /* Ширина контейнера */
+    width: 100%;
+    height: 500px; /* Увеличиваем высоту контейнера */
+    margin: 0 auto; /* Центрируем карусель */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Для корректного позиционирования кнопок */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 100%; /* Фотографии занимают всю ширину слайда */
+    max-height: 100%; /* Фотографии занимают всю высоту слайда */
+    object-fit: cover; /* Сохраняем пропорции и обрезаем лишнее */
+    border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #3A3DF0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+/* Стили для точек пагинации */
+.swiper-pagination {
+    position: relative; /* Перемещаем пагинацию под слайды */
+    margin-top: 20px; /* Отступ сверху */
+    bottom: auto; /* Сбрасываем позиционирование */
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px !important; /* Отступ между точками */
+}
+
+.swiper-pagination-bullet-active {
+    background: #3A3DF0;
+    opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .swiper-container {
+        max-width: 800px; /* Уменьшаем ширину для планшетов */
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-container {
+        height: 400px; /* Уменьшаем высоту для планшетов */
+        max-width: 600px; /* Уменьшаем ширину для планшетов */
+    }
+
+    .gallery h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-container {
+        height: 300px; /* Уменьшаем высоту для мобильных устройств */
+        max-width: 100%; /* На мобильных — на всю ширину */
+    }
+
+    .gallery h2 {
         font-size: 24px;
     }
 }
