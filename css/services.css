@@ -138,6 +138,7 @@ nav a {
 .pricing-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #121212;
 }
 
 .pricing-item p {
@@ -145,6 +146,63 @@ nav a {
     color: #555;
 }
 
+/* Секция технологий */
+.technologies {
+    padding: 60px 50px;
+    background: #121212;
+    text-align: center;
+    color: #fff;
+}
+
+.technologies h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.technologies p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.technologies-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.technologies-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.technologies-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+.technologies-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+.technologies-item ul {
+    list-style-type: disc; /* Маркеры списка */
+    padding-left: 20px; /* Отступ для списка */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.technologies-item li {
+    font-size: 16px;
+    margin-bottom: 10px; /* Отступ между элементами списка */
+    color: #555; /* Цвет текста */
+}
+
+.technologies-item strong {
+    color: #121212; /* Цвет для выделения названий технологий */
+}
 /* Футер */
 footer {
     background: #3A3DF0;
