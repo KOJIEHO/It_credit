@@ -184,6 +184,11 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.about h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
 .about p {
     font-size: 18px;
     margin-bottom: 20px;
@@ -388,6 +393,10 @@ footer {
 
     .services h2, .about h2, .our_products h2, .contact h2 {
         font-size: 24px;
+    }
+
+    .services h3, .about h3, .our_products h3, .contact h3 {
+        font-size: 20px;
     }
 
     .services .service-grid {
