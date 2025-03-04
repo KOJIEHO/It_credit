@@ -43,7 +43,7 @@ nav a:hover {
 /* Основной экран */
 .hero {
     height: 100vh;
-    background: url('../images/background.jpg') no-repeat center center/cover;
+    background: url('../images/background_image.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,17 +78,32 @@ nav a:hover {
 }
 
 .hero-content .cta-button {
-    background: #3A3DF0;
+    display: inline-block;
+    padding: 12px 24px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
+    border: none; /* Убираем границу */
+    border-radius: 30px; /* Закругленные углы */
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Градиентный фон */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+    transition: all 0.3s ease; /* Плавный переход для hover-эффекта */
+    /* background: #3A3DF0;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s; */
 }
 
 .hero-content .cta-button:hover {
-    background: #2a2fcc;
+    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Инвертируем градиент при наведении */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+    transform: translateY(-2px); /* Легкий подъем кнопки */
+    /* background: #2a2fcc; */
 }
 
 /* Секция "Наши услуги" */
@@ -124,6 +139,20 @@ nav a:hover {
 .services .service p {
     font-size: 16px;
     color: #555;
+}
+
+/* Общие стили для кнопок "Узнать больше" */
+.cta-button {
+    background: transparent;
+    color: #333; /* Цвет текста */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid; /* Рамка */
 }
 
 .services .cta-button {

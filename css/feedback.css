@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background_image.jpg");
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -43,17 +43,6 @@ nav a:hover {
 
 .logo {
     font-size: 18px;
-}
-
-nav {
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
 }
 
 .contact-button {
@@ -122,14 +111,24 @@ nav a {
 }
 
 .form-container #button {
-    background: #3A3DF0;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    display: inline-block;
+    padding: 12px 24px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
+    border: none; /* Убираем границу */
+    border-radius: 30px; /* Закругленные углы */
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Градиентный фон */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+    transition: all 0.3s ease; /* Плавный переход для hover-эффекта */
 }
 
 .form-container #button:hover {
-    background: #2a2fcc;
+    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Инвертируем градиент при наведении */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+    transform: translateY(-2px); /* Легкий подъем кнопки */
 }
 
 footer {
