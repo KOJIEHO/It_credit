@@ -210,7 +210,7 @@ nav a:hover {
     transition: color 2s;
 }
 
-.about .cta-button {
+.about .cta-button {  
     color: #fff;
     padding: 5px 5px;
     text-decoration: none;
@@ -280,12 +280,18 @@ nav a:hover {
 }
 
 .contact .contact-stats {
-    display: flex;
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-around; /* Равномерное распределение блоков */
+    flex-wrap: wrap; /* Перенос блоков на новую строку, если не хватает места */
+    gap: 20px; /* Расстояние между блоками */
+
+    /* display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; */
 }
 
 .contact .stat {
+    flex: 1;
     text-align: center;
 }
 
