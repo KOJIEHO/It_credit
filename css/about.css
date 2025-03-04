@@ -126,6 +126,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    white-space: nowrap;
 }
 
 /* Адаптивность */
@@ -282,5 +283,10 @@ footer {
 
     .gallery h2 {
         font-size: 24px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
     }
 }
