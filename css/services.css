@@ -231,44 +231,62 @@ footer {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 1024px) {
-    .services h2, .pricing h2 {
+    .services h2, .pricing h2, .technologies h2 {
         font-size: 30px;
     }
 
-    .service-grid, .pricing-table {
+    .service-grid, .pricing-table, .technologies-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .service-item, .pricing-item {
+    .service-item, .pricing-item, .technologies-item {
         padding: 15px;
     }
 }
 
 @media (max-width: 768px) {
-    .services h2, .pricing h2 {
+    .services h2, .pricing h2, .technologies h2 {
         font-size: 28px;
     }
 
-    .service-item h3, .pricing-item h3 {
+    .service-item h3, .pricing-item h3, .technologies h3 {
         font-size: 22px;
     }
 
-    .service-item p, .pricing-item p {
+    .service-item p, .pricing-item p, .technologies p {
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .service-item h3, .pricing-item h3 {
+    /* Общие стили для секций */
+    .pricing, .technologies {
+        padding: 30px 10px; /* Уменьшаем отступы */
+    }
+
+    .services h2, .pricing h2, .technologies h2 {
+        font-size: 24px;
+    }
+
+    .pricing-item, .technologies-item {
+        padding: 15px; /* Уменьшаем внутренние отступы */
+    }
+
+    .service-item h3, .pricing-item h3, .technologies h3 {
         font-size: 18px;
     }
 
-    .service-item p, .pricing-item p {
+    .service-item p, .pricing-item p, .technologies p {
         font-size: 12px;
     }
+    
+    .pricing-item li, .technologies-item li {
+        font-size: 12px; /* Уменьшаем размер текста в списках */
+    }
 
-    .services h2, .pricing h2 {
-        font-size: 24px;
+    .pricing-table, .technologies-table {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Уменьшаем минимальную ширину блоков */
+        gap: 15px; /* Уменьшаем расстояние между блоками */
     }
 
     footer {
