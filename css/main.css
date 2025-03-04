@@ -185,7 +185,7 @@ nav a:hover {
 }
 
 .about h3 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -328,6 +328,10 @@ footer {
         font-size: 30px;
     }
 
+    .about h3 {
+        font-size: 22px;
+    }
+
     .services .service-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -358,6 +362,10 @@ footer {
 
     .services h2, .about h2, .our_products h2, .contact h2 {
         font-size: 28px;
+    }
+
+    .about h3 {
+        font-size: 20px;
     }
 
     .services .service-grid {
@@ -392,11 +400,7 @@ footer {
     }
 
     .services h2, .about h2, .our_products h2, .contact h2 {
-        font-size: 24px;
-    }
-
-    .services h3, .about h3, .our_products h3, .contact h3 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .services .service-grid {
