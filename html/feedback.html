@@ -7,6 +7,11 @@
 
     <link href="../css/feedback.css" rel="stylesheet">
     <script src="../js/submit-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Инициализация EmailJS
+        emailjs.init('XfAenyx9YDUU0z49z'); // Замените на ваш публичный ключ из EmailJS
+    </script>
 
 </head>
 <body>
@@ -26,7 +31,7 @@
         <div class="hero-content">
             <h1>Заполните форму</h1>
             <div class="form-container">
-                <form>
+                <form id="contact-form">
                     <label for="name">Ваше имя</label>
                     <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
 
@@ -39,12 +44,29 @@
                     <label for="message">Ваше сообщение</label>
                     <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
                     <h4>С вами свяжется наш менеджер</h4>
-                     <input id="button" type="button" onclick="redirect()" value="Отправить">
+                     <input id="button" type="submit" value="Отправить">
 
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        // Функция для отправки формы
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+    
+            // Отправляем данные через EmailJS
+            emailjs.sendForm('service_qk56969', 'template_f62ho9d', this)
+                .then(function (response) {
+                    console.log('Письмо успешно отправлено!', response.status, response.text);
+                    // Перенаправляем пользователя на другую страницу
+                    window.location.href = '../index.html';
+                }, function (error) {
+                    console.error('Ошибка при отправке письма:', error);
+                    alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте ещё раз.');
+                });
+        });
+    </script>
 
     <footer>
         © ООО «ИТ Восточной Сибири», 2024—2025
